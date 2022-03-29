@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conda &mdash; Conda   documentation</title>
+<link rel="shortcut icon" href="_static/conda-logo.png" />
+<script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+<script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+<script type="text/javascript" src="_static/jquery.js"></script>
+<script type="text/javascript" src="_static/underscore.js"></script>
+<script type="text/javascript" src="_static/doctools.js"></script>
+<script type="text/javascript" src="_static/language_data.js"></script>
+<script async="async" type="text/javascript" src="https://assets.readthedocs.com/javascript/readthedocs-doc-embed.js"></script>
+<script type="text/javascript" src="_static/js/theme.js"></script>
+<link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+<link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+<link rel="index" title="Index" href="genindex.html" />
+<link rel="search" title="Search" href="search.html" />
+<link rel="next" title="Conda" href="conda.html" />
+
+<link rel="stylesheet" href="https://assets.readthedocs.com/css/readthedocs-doc-embed.css" type="text/css" />
+<script type="application/json" id="READTHEDOCS_DATA">{"ad_free": false, "api_host": "https://readthedocs.com", "build_date": "2022-03-14T16:14:33Z", "builder": "sphinx", "canonical_url": null, "commit": "719f7a74", "docroot": "/docs/source/", "features": {"docsearch_disabled": false}, "global_analytics_code": "UA-17997319-2", "language": "en", "page": "index", "programming_language": "words", "project": "continuumio-conda-docs", "proxied_api_host": "/_", "source_suffix": ".rst", "subprojects": {"continuumio-conda": "https://docs.conda.io/projects/conda/en/latest/", "continuumio-conda-build": "https://docs.conda.io/projects/conda-build/en/latest/", "continuumio-constructor": "https://docs.conda.io/projects/constructor/en/latest/"}, "theme": "sphinx_rtd_theme", "user_analytics_code": "UA-143855151-1", "version": "latest"}</script>
+
+<script type="text/javascript">
+READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerHTML);
+</script>
+<script type="text/javascript" src="https://assets.readthedocs.com/javascript/readthedocs-analytics.js" async="async"></script>
+
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+<nav data-toggle="wy-nav-shift" class="wy-nav-side">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a href="#" class="icon icon-home"> Conda
+</a>
+<div class="version">
+latest
+</div>
+<div role="search">
+<form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+<input type="text" name="q" placeholder="Search docs" />
+<input type="hidden" name="check_keywords" value="yes" />
+<input type="hidden" name="area" value="default" />
+</form>
+</div>
+</div>
+<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="conda.html">Conda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conda-build.html">Conda-build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="miniconda.html">Miniconda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help-support.html">Help and support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">Conda license</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+<nav class="wy-nav-top" aria-label="top navigation">
+<i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+<a href="#">Conda</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div role="navigation" aria-label="breadcrumbs navigation">
+<ul class="wy-breadcrumbs">
+<li><a href="#">Docs</a> &raquo;</li>
+<li>Conda</li>
+<li class="wy-breadcrumbs-aside">
+<a href="https://github.com/conda/conda-docs/blob/master/docs/source/index.rst" class="fa fa-github"> Edit on GitHub</a>
+</li>
+</ul>
+<hr />
+</div>
+<div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+<div itemprop="articleBody">
+<div class="section" id="conda">
+<h1>Conda<a class="headerlink" href="#conda" title="Permalink to this headline">¶</a></h1>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/conda_logo.svg"><img alt="_images/conda_logo.svg" src="_images/conda_logo.svg" width="50%" /></a>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><em>Package, dependency and environment management for any
+language—Python, R, Ruby, Lua, Scala, Java, JavaScript, C/ C++,
+FORTRAN, and more.</em></p>
+<p>Conda is an open source package management system and environment
+management system that runs on Windows, macOS and Linux. Conda
+quickly installs, runs and updates packages and their dependencies.
+Conda easily creates, saves, loads and switches between environments
+on your local computer. It was created for Python programs, but it
+can package and distribute software for any language.</p>
+<p>Conda as a package manager helps you find and install packages.
+If you need a package that requires a different version of
+Python, you do not need to switch to a different environment
+manager, because conda is also an environment manager. With just
+a few commands, you can set up a totally separate environment to
+run that different version of Python, while continuing to run
+your usual version of Python in your normal environment.</p>
+<p>In its default configuration, conda can install and manage the
+thousand packages at <a class="reference external" href="https://repo.anaconda.com/">repo.anaconda.com</a> that are built, reviewed
+and maintained by Anaconda®.</p>
+<p>Conda can be combined with continuous integration systems such
+as Travis CI and AppVeyor to provide frequent, automated testing
+of your code.</p>
+<p>The conda package and environment manager is included in all versions of
+Anaconda and Miniconda.</p>
+<p>Conda is also included in <a class="reference external" href="https://www.anaconda.com/enterprise/">Anaconda Enterprise</a>, which provides on-site enterprise
+package and environment management for Python, R, Node.js, Java and other
+application stacks. Conda is also available on <a class="reference external" href="https://anaconda.org/conda-forge/conda">conda-forge</a>,
+a community channel. You may also get conda on <a class="reference external" href="https://pypi.org/">PyPI</a>,
+but that approach may not be as up to date.</p>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+<a href="conda.html" class="btn btn-neutral float-right" title="Conda" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr />
+<div role="contentinfo">
+<p>
+&copy; Copyright 2017, Anaconda, Inc.
+<span class="commit">
+Revision <code>719f7a74</code>.
+</span>
+</p>
+</div>
+Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+</div>
+</div>
+</section>
+</div>
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+v: latest
+<span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Versions</dt>
+<dd><a href="/en/master/">master</a></dd>
+<dd><a href="/en/latest/">latest</a></dd>
+</dl>
+<dl>
+<dt>Downloads</dt>
+</dl>
+<dl>
+<dt>On Read the Docs</dt>
+<dd>
+<a href="//readthedocs.com/projects/continuumio-conda-docs/?fromdocs=continuumio-conda-docs">Project Home</a>
+</dd>
+<dd>
+<a href="//readthedocs.com/builds/continuumio-conda-docs/?fromdocs=continuumio-conda-docs">Builds</a>
+</dd>
+</dl>
+<hr />
+Free document hosting provided by <a href="https://www.readthedocs.org">Read the Docs</a>.
+</div>
+</div>
+<script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27761864-11', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
